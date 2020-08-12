@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appbolsa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".config.RealmConfig"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".carteira.ListagemAtivosActivity"
+            android:label="Ativos"></activity>
+        <activity android:name=".Util.GraficoActivity" />
+        <activity
+            android:name=".carteira.AddAtivoActivity"
+            android:label="@string/novo_ativo"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name=".carteira.CadastroCarteirasActivity"
+            android:label="Nova Carteira"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".carteira.CarteiraActivity"
+            android:label="@string/title_activity_carteira"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".services.CotacaoService"
+            android:exported="false" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GDMBolsa</string>
+    <string name="title_activity_carteira">Carteiras</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="title_activity_add_ativo">Detalhes da Carteira</string>
+    <string name="novo_ativo">Novo ativo</string>
+
+    <string name="dash">-</string>
+</resources>
